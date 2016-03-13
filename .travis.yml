@@ -13,6 +13,7 @@ env:
   - APP=mysql-workbench
   - APP=nodejs
   - APP=openssh-server
+  - APP=php7
   - APP=phpstorm
   - APP=quassel
   - APP=secondlife
