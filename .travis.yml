@@ -15,3 +15,5 @@ notifications:
   email:
     - matthew@baggett.me
   slack: thruio:m7cGYXmdz261AkGDfiRVBHmY
+
+sudo: required
