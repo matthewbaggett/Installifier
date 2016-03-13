@@ -5,6 +5,7 @@ env:
   - APP=arduino
   - APP=basics
   - APP=chrome
+  - APP=deluge
   - APP=docker.io docker-compose
   - APP=eagle
   - APP=hamachi
@@ -13,6 +14,7 @@ env:
   - APP=nodejs
   - APP=openssh-server
   - APP=phpstorm
+  - APP=quassel
   - APP=secondlife
   - APP=skype
   - APP=slack
