@@ -1,0 +1,17 @@
+language: c
+
+env:
+  - APP=chrome
+  - APP=docker.io docker-compose
+  - APP=eagle
+
+matrix:
+  allow_failures:
+
+script:
+  - ./installifier $APP
+
+notifications:
+  email:
+    - matthew@baggett.me
+  slack: thruio:m7cGYXmdz261AkGDfiRVBHmY

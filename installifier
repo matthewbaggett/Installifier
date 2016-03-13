@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+if [ $SUDO_USER ]; then user=$SUDO_USER; else user=`whoami`; fi
+
+echo "Running Everything-Installer as $user"
+./components/pre/mkdirs.sh
+
+for i in $*; do
+  echo "Installing $i";
+  echo "Precursor..."
+  if [ -f ./components/pre/$i.sh ]
+  then
+    echo "Running ./components/pre/$i.sh"
+    ./components/pre/$i.sh;
+  fi;
+  echo "Updating";
+  sudo apt-get --yes -qq update
+  echo "Installing $i..."
+  if [ -f ./components/install/$i.sh ]
+  then
+    echo "Running ./components/install/$i.sh";
+    ./components/install/$i.sh;
+  fi;
+  echo "Cleanup..."
+  if [ -f ./components/post/$i.sh ]
+  then
+    echo "Running ./components/post/$i.sh"
+    ./components/post/$i.sh
+  fi;
+done
+exit
