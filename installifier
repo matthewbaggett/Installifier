@@ -2,7 +2,11 @@
 if [ $SUDO_USER ]; then user=$SUDO_USER; else user=`whoami`; fi
 
 echo "Running Everything-Installer as $user"
-./components/pre/mkdirs.sh
+
+if [ ! -d ~/bin ]
+then
+	mkdir ~/bin;
+fi
 
 for i in $*; do
   echo "Installing $i";

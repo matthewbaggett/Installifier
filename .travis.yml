@@ -1,9 +1,26 @@
 language: c
 
 env:
+  - APP=apache2
+  - APP=arduino
+  - APP=basics
   - APP=chrome
   - APP=docker.io docker-compose
   - APP=eagle
+  - APP=hamachi
+  - APP=java
+  - APP=mysql-workbench
+  - APP=nodejs
+  - APP=openssh-server
+  - APP=phpstorm
+  - APP=secondlife
+  - APP=skype
+  - APP=slack
+  - APP=spotify
+  - APP=telegram
+  - APP=whatpulse
+  - APP=zsh
+  - APP=update-and-upgrade
 
 matrix:
   allow_failures:
