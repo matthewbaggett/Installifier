@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-apt-get -yq install quassel-client
+sudo apt-get --yes -q install quassel-client

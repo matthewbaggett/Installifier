@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-apt-get -yq install deluge-gtk
+sudo apt-get --yes -q install deluge-gtk
