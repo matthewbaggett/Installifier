@@ -4,5 +4,7 @@ wget -O sl.tar.xz http://downloads.firestormviewer.org/linux/Phoenix_FirestormOS
 mv sl.tar.xz ~/bin
 cd ~/bin;
 tar xf sl.tar.xz;
+mv Phoenix_FirestormOS* SecondLife
 rm sl.tar.xz;
 cd -;
+ln -s ~/bin/SecondLife/firestorm ~/bin/secondlife

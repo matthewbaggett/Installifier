@@ -7,3 +7,4 @@ cd ~/bin;
 tar xf telegram.tar.xz;
 rm telegram.tar.xz;
 cd -;
+ln -s ~/bin/Telegram/Telegram ~/bin/telegram
