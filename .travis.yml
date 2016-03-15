@@ -20,6 +20,7 @@ env:
   - APP=skype
   - APP=slack
   - APP=spotify
+  - APP=steam
   - APP=telegram
   - APP=whatpulse
   - APP=zsh
