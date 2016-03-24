@@ -10,6 +10,7 @@ env:
   - APP=eagle
   - APP=hamachi
   - APP=java
+  - APP=mate
   - APP=mysql-workbench
   - APP=nodejs
   - APP=openssh-server
