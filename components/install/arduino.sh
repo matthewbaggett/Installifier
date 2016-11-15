@@ -7,7 +7,8 @@ usbgroup=dialout
 wget -O arduino.tar.xz https://downloads.arduino.cc/arduino-1.6.8-linux64.tar.xz
 mv arduino.tar.xz ~/bin/
 cd ~/bin/
-tar xf arduino.tar.xz -C arduino-ide/
+mkdir arduino-ide
+tar -xf arduino.tar.xz -C arduino-ide/
 cd -;
 
 sudo usermod -a -G $usbgroup $user
